@@ -17,7 +17,7 @@ namespace HajósTeszt.wwwroot
 h1{
     text-align: center;
     font-style:italic;
-    background-image:url(Március.png);
+    background-image:url(bck.png);
 }
 
 a {
