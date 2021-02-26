@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace HajósTeszt.wwwroot
+{
+    public class cv
+        {
+#tarto{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+h1{
+    text-align: center;
+    font-style:italic;
+}
+
+a {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    color: black;
+}
+
+    a:hover {
+        background-color: black;
+        color:white;
+    }
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body{background-color:darksalmon;}
