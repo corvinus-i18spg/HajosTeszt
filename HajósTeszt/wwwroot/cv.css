@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿body {
+    #tarto
 
-namespace HajósTeszt.wwwroot
 {
-    public class cv
-        {
-#tarto{
     margin: 10px;
     padding: 20px;
     border: 1px solid black;
     border-radius: 25px;
 }
 
-h1{
+h1 {
     text-align: center;
-    font-style:italic;
-    background-image:url(bck.png);
+    font-style: italic;
+    background-image: url(bck.png);
 }
 
 a {
@@ -29,7 +23,7 @@ a {
 
     a:hover {
         background-color: black;
-        color:white;
+        color: white;
     }
 
 span {
@@ -37,9 +31,11 @@ span {
     font-size: 20px;
 }
 
-body{background-color:darksalmon;}
+body {
+    background-color: darksalmon;
+}
 
-img{
-    display:block;
-    margin:auto;
+img {
+    display: block;
+    margin: auto;
 }
