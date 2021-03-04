@@ -36,3 +36,12 @@ img {
     display: block;
     margin: auto;
 }
+
+hr{
+    height:5px;
+    color:black;
+}
+#2{
+    height:5px;
+    color:black;
+}
