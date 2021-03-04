@@ -4,18 +4,18 @@
     padding: 20px;
     border: 1px solid black;
     border-radius: 25px;
-    text-align: center;
 }
 
 #ended,
 #lang,
 #hobby,
 #hol {
-    padding: 20px;
+    padding: 10px;
 }
 #hol {
     background-color: gainsboro;
     display: flex;
+    text-align:center;
 }
 
     #hol a {
@@ -64,8 +64,11 @@ img {
 }
 
 hr{
-    height: 5px;
+    width: 1000px;
+    height:5px;
     color: black;
+    flex-direction:row;
+    display:flex;
 }
 
 @media screen and (min-width:800px) {
@@ -75,6 +78,13 @@ hr{
         margin: auto;
         max-width: 1000px;
     }
+    hr {
+        width: 1000px;
+        height:5px;
+        color: black;
+        flex-direction: row;
+        display:flex;
+    }
 
     #main {
         display: flex;
@@ -82,6 +92,8 @@ hr{
 
     #hobby {
         flex: 1 1 75%;
+        text-align:left;
+        display:flex;
     }
 
     #hol {
