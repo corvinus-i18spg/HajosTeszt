@@ -34,13 +34,10 @@ body {
 
 img {
     display: block;
-    margin: auto;
+    text-align:right;
 }
 
-hr{
-    height:5px;
-    color:black;
-}
+hr,
 #2{
     height:5px;
     color:black;
