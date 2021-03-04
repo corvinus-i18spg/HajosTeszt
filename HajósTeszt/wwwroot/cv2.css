@@ -1,0 +1,63 @@
+﻿
+#tarto {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#ended,
+#lang,
+#hobby,
+#hol {
+    padding: 20px;
+}
+#hol {
+    background-color: deepskyblue;
+    display: flex;
+}
+
+    #hol a {
+        text-decoration: none;
+        color: black;
+        flex: 1 1 auto;
+    }
+
+#ended {
+    background-color: gold;
+    text-align: left;
+}
+
+#lang {
+    background-color: lightgreen;
+}
+
+#hobby {
+    background-color: hotpink;
+}
+
+@media screen and (min-width:800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 1500px;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #ended, #lang {
+        order: -1;
+    }
+
+    #hobby {
+        flex: 1 1 75%;
+    }
+
+    #hol {
+        flex: 1 1 25%;
+    }
+}
