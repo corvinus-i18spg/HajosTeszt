@@ -14,43 +14,70 @@
     padding: 20px;
 }
 #hol {
-    background-color: deepskyblue;
+    background-color: gainsboro;
     display: flex;
 }
 
     #hol a {
-        text-decoration: none;
         color: black;
-        flex: 1 1 auto;
+        flex:1 1 auto;
+        padding: 25px;
     }
 
 #ended {
-    background-color: gold;
+    background-color: ghostwhite;
     text-align: left;
 }
 
 #lang {
-    background-color: lightgreen;
+    background-color: lavenderblush;
 }
 
 #hobby {
-    background-color: hotpink;
+    background-color: linen;
+    text-align: left;
+}
+#tarto {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+body {
+    background-color: oldlace;
+}
+
+img {
+    display: block;
+    text-align:center;
+}
+
+hr{
+    height: 5px;
+    color: black;
 }
 
 @media screen and (min-width:800px) {
-    body {
+    #tarto {
         display: flex;
         flex-direction: column;
         margin: auto;
-        max-width: 1500px;
+        max-width: 1000px;
     }
 
     #main {
         display: flex;
-    }
-
-    #ended, #lang {
-        order: -1;
     }
 
     #hobby {
