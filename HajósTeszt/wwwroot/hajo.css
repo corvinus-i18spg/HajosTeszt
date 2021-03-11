@@ -37,3 +37,11 @@ html, body{
     background-color:aquamarine;
     color:black;
 }
+.jó:hover{
+    background-color:forestgreen;
+    color:antiquewhite;
+}
+.rossz:hover {
+    background-color: orangered;
+    color: antiquewhite;
+}
