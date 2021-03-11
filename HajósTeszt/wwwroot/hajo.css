@@ -6,7 +6,7 @@
     height:100%;
     display:flex;
     flex-direction:column;
-    background-color:cadetblue;
+    background-color:beige;
 }
 html, body{
     height:100%;
@@ -15,7 +15,7 @@ html, body{
     display:flex;
     flex-direction:row;
     flex-grow:1;
-    background-color:cornflowerblue;
+    background-color:bisque;
 }
 #válaszok{
     flex-grow:1;
@@ -30,14 +30,14 @@ html, body{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    background-color:darkcyan;
+    background-color:blanchedalmond;
 }
 .gomb{
     padding:20px;
     width:80px;
 }
 .kattintható:hover{
-    background-color:aquamarine;
+    background-color:rosybrown;
     color:black;
 }
 .jó:hover{
