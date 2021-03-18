@@ -1,4 +1,4 @@
-﻿#pascal {
+﻿#ide {
     
 }
 
@@ -8,7 +8,7 @@
     flex-direction:row;
 }
 
-.elem {
+.szam {
     height:30px;
     width:30px;
 }
