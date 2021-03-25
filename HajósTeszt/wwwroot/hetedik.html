@@ -7,6 +7,23 @@
     <title></title>
 </head>
 <body>
+    <ol id="ide"></ol>
+        <script>
+            fetch("/question.json")
+                .then(r => r.json())
+                .then(d => adatÉrkezett(d));
 
+            function adatÉrkezett(adat) {
+                let ide = document.getElementById("ide");
+                console.log(`${adat.length} kérdés érketett`)
+
+                for (var i = 0; i < adat.length; i++) {
+                    console.log(adat[i].questionText)
+                    let elem = document.createElement("li")
+                    elem.innerHTML = adat[i].questionText
+                    ide.appendChild(elem)
+                }
+            }
+        </script>
 </body>
 </html>
