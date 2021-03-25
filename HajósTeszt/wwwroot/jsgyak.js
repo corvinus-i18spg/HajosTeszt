@@ -1,6 +1,5 @@
 ﻿window.onload = function () {
-    consol.log("Start!");
-    let hova = document.getElementById("ide");
+    let hova = document.getElementById("Pascal");
     for (var s = 0; s < 10; s++) {
         let sor = document.createElement("div");
         sor.classList.add("sor")
