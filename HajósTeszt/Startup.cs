@@ -29,6 +29,11 @@ namespace HajósTeszt
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         } 
     }
         
