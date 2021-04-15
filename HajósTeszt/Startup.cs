@@ -29,11 +29,6 @@ namespace HajósTeszt
             app.UseStaticFiles(); //A sorrend fontos!
 
             app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
         } 
     }
         
