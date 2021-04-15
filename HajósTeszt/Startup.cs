@@ -30,10 +30,10 @@ namespace HajósTeszt
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            _ = app.UseEndpoints(endpoints =>
+              {
+                  endpoints.MapControllers();
+              });
         } 
     }
         
