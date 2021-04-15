@@ -26,14 +26,14 @@ namespace HajósTeszt
             app.UseHttpsRedirection();
 
             app.UseDefaultFiles();
-            app.UseStaticFiles();
+            app.UseStaticFiles(); //A sorrend fontos!
 
             app.UseRouting();
 
-            _ = app.UseEndpoints(endpoints =>
-              {
-                  endpoints.MapControllers();
-              });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         } 
     }
         
