@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <None Include="wwwroot\cv.html" />
+    <None Include="wwwroot\tizedik.html" />
+    <None Include="wwwroot\tizedik.js" />
   </ItemGroup>
 
   <ItemGroup>
