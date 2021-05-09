@@ -66,6 +66,8 @@ function kerdesMegjelenites() {
     else {
         document.getElementById("kép").style.display = "none";
     }
+
+    for (var i = 1; i <= 3; i++) document.getElementById("válasz" + i).classList.remove("jó", "rossz")
 }
 
 function előre() {
@@ -79,4 +81,15 @@ function vissza() {
     displayedQuestion--;
     if (displayedQuestion < 0) displayedQuestion == questionInHotList - 1;
     kerdesMegjelenites();
+}
+
+function választás(n) {
+    let kerdes = hotList[displayedQuestion].question;
+    if (n === kerdes.correctAnswer) {
+        document.getElementById("válasz"+n).classList.add("jó")
+    }
+    else {
+        document.getElementById("válasz" + n).classList.add("rossz")
+        document.getElementById("válasz" + kerdes.correctAnswer).classList.add("jó")
+    }
 }

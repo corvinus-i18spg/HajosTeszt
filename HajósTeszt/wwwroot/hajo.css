@@ -40,11 +40,11 @@ html, body{
     background-color:rosybrown;
     color:black;
 }
-.jó:hover{
+.jó{
     background-color:forestgreen;
     color:antiquewhite;
 }
-.rossz:hover {
+.rossz{
     background-color: orangered;
     color: antiquewhite;
 }
