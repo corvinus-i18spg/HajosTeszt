@@ -3,6 +3,7 @@ var questionInHotList = 3;
 var displayedQuestion;
 var numberOfQuestions;
 var nextQuestion = 1;
+var timerHandler;
 
 document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < questionInHotList; i++) {
@@ -68,9 +69,11 @@ function kerdesMegjelenites() {
     }
 
     for (var i = 1; i <= 3; i++) document.getElementById("válasz" + i).classList.remove("jó", "rossz")
+    document.getElementById("válaszok").style.pointerEvents = "auto";
 }
 
 function előre() {
+    clearTimeout(timerHandler);
     displayedQuestion++;
 
     if (displayedQuestion == hotList) displayedQuestion = 0;
@@ -86,10 +89,23 @@ function vissza() {
 function választás(n) {
     let kerdes = hotList[displayedQuestion].question;
     if (n === kerdes.correctAnswer) {
-        document.getElementById("válasz"+n).classList.add("jó")
+        document.getElementById("válasz" + n).classList.add("jó")
+        hotList[displayedQuestion].goodAnswers++;
+        if (hotList[displayedQuestion].goodAnswers===3) {
+            kerdesBetoltes(nextQuestion, displayedQuestion);
+            nextQuestion++;
+        }
     }
     else {
         document.getElementById("válasz" + n).classList.add("rossz")
         document.getElementById("válasz" + kerdes.correctAnswer).classList.add("jó")
+        hotList[displayedQuestion].goodAnswers = 0;
     }
+
+    document.getElementById("válaszok").style.pointerEvents = "none";
+    timerHandler = setTimeout(előre, 3000);
+
+    localStorage.setItem("hotList", JSON.stringify(hotList));
+    localStorage.setItem("displayedQuestion", displayedQuestion);
+    localStorage.setItem("nextQuestion", nextQuestion);
 }
