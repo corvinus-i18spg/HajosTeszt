@@ -13,18 +13,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    for (let i = 0; i < questionInHotList; i++) {
-        kerdesBetoltes(nextQuestion, i);
-        nextQuestion++;
-    }
-
     fetch("questions/count")
         .then(result => result.text())
         .then(n => { numberOfQuestions = parseInt(n) })
 
     document.getElementById("előre_gomb").addEventListener("click", előre);
     document.getElementById("vissza_gomb").addEventListener("click", vissza);
-    
+
+
+    if (localStorage.getItem("hotList")){
+        hotList = JSON.parse(localStorage.getItem("hotList"));
+    }
+
+    if (localStorage.getItem("displayedQuestion")) {
+        displayedQuestion = parseInt(localStorage.getItem("displayedQuestion"));
+    }
+
+    if (localStorage.getItem("nextQuestion")) {
+        nextQuestion = parseInt(localStorage.getItem("nextQuestion"));
+    }
+
+    if (hotList.length === 0) {
+        for (let i = 0; i < questionInHotList; i++) {
+            kerdesBetoltes(nextQuestion, i);
+            nextQuestion++;
+        }
+    }
+    else {
+        kerdesMegjelenites();
+    }
 
 });
 
