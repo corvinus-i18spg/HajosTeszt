@@ -1,0 +1,21 @@
+﻿body {
+    background-color: oldlace;
+}
+
+#Oldalcim {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+
+#Adatok {
+    font-size: 25px;
+    color: grey;
+    text-align: center;
+    flex-wrap: wrap;
+}
