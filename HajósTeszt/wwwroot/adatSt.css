@@ -19,3 +19,8 @@
     text-align: center;
     flex-wrap: wrap;
 }
+
+.sor {
+    display: flex;
+    flex-direction: row;
+}
