@@ -51,6 +51,12 @@ namespace HajósTeszt.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            AdatokContext context = new AdatokContext();
+            var törlés = (from x in context.Embers
+                          where x.Id == id
+                          select x).FirstOrDefault();
+            context.Remove(törlés);
+            context.SaveChanges();
         }
     }
 }
